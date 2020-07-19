@@ -1,0 +1,78 @@
+%### Einstellungen ###################################
+\documentclass[a4paper,12pt,oneside]{scrreprt}
+\input{setup}
+
+%### Dokumentbeginn ##################################
+\begin{document}
+
+%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+\pagestyle{empty}
+
+% Teilen von manchen Wörtern verhindern
+\hyphenation{ATmega}
+
+%Besondere Trennungen
+\hyphenation{De-zi-mal-tren-nung}
+
+%### Anmerkungen #####################################
+% ==> spaeter entfernen
+\input{kapitel/da-anmerkung}
+
+%### Deckblatt #######################################
+\input{kapitel/titel}
+
+%### Einstellungen ###################################
+%löschen aller vorherigen Einstellungen der Seite
+\cleardoublepage
+%neue Seitennummerierung für folgende Seiten
+\pagenumbering{Roman}
+
+
+%### Vorgegebene Struktur ############################
+\input{kapitel/Diplomanden-Betreuer}
+\input{kapitel/danksagungen}
+\input{kapitel/Kurzfassung}
+\input{kapitel/Abstract}
+
+%### Inhaltsverzeichnis ##############################
+%Leerzeile in TOC
+
+\newpage
+
+\tableofcontents
+\clearpage
+
+%### Seitennummern arabisch ##########################
+% pagestyle für gesamtes Dokument aktivieren
+\pagestyle{fancy}
+\pagenumbering{arabic}
+% \setcounter{page}{7}
+
+%### Kapitel #########################################
+\input{kapitel/latex-start}
+\input{kapitel/Einleitung}
+\input{kapitel/Ideenfindung}
+
+\input{kapitel/Anmerkungen}
+
+
+%### Abbildungsverzeichnis ###########################
+\listoffigures
+
+%### Tabellenverzeichnis #############################
+%\listoftables
+
+%### Abkuerzungsverzeichnis ##########################
+\input{kapitel/Abkuerzungsverzeichnis}
+
+%### Literaturverzeichnis ############################
+\bibliographystyle{plain}
+\bibliography{Literatur}
+
+\pagestyle{empty}
+
+%### Ende ############################################
+\input{kapitel/Endpage}
+
+
+\end{document}
