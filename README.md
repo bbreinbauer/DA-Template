@@ -1,2 +1,6 @@
 # DA-Template
-Template for generating DA documentation with latex
+Template für Dokumentation der Diplomarbeit an der HTL Wels
+
+## Setup
+
+Anleitung: https://latex.tugraz.at/latex/installation
