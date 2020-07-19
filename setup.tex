@@ -1,10 +1,9 @@
 
-% ============= Packages =============
+%### Packages und Configuration ######################
 \usepackage[left= 3cm, right = 2cm, bottom = 2cm, top = 2cm]{geometry}
 %für das Umschmiegen des Textes um ein Bild
 \usepackage{wrapfig}
 \usepackage[utf8]{inputenc}
-\usepackage{listings}
 \usepackage{xcolor}
 \usepackage[ngerman]{babel}
 
@@ -27,6 +26,9 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 
+
+%### Code Listing Style ##############################
+\usepackage{listings}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}              
 \definecolor{commentcolor}{rgb}{0.497495, 0.497587, 0.497464}
 \definecolor{keywordcolor}{rgb}{0.000000, 0.000000, 0.635294}
@@ -65,6 +67,7 @@
 \lstset{style=mystyle}
 \renewcommand{\lstlistingname}{Code}
 
+%### Dokument Config #################################
 %Schriftgröße der Bildunterschriften
 \usepackage[font=small,labelfont=bf]{caption}
 %Abstand Caption-Bild
@@ -72,16 +75,8 @@
 
 %"Tiefe" für Nummerierung ändern (wie viele Unterkategorien sollen nummeriert werden
 \setcounter{secnumdepth}{5}
-%Subsubsection-Schriftgröße ändern (vergrößern)
-% \makeatletter
-% \renewcommand\subsubsection{\@startsection{subsubsection}{4}{\z@}%
-%                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
-%                                    {2.3ex \@plus.2ex}%
-%                                    {\normalfont\large\bfseries}}
-% \makeatother
 
-
-% Dokumentinformationen
+%### Dokumentinformationen ###########################
 \usepackage[
 	pdftitle={Todo: Mein DA Titel},
 	pdfsubject={},
@@ -92,6 +87,7 @@
 	hidelinks
 ]{hyperref}
 
+%### Shortcut Kommando fuer hspace ###################
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
 %wichtig für Abstand oben
@@ -116,13 +112,13 @@
 % \newcommand{\comment}[1]
 % {\par {\bfseries \color{blue} #1 \par}} %comment showed
 
+%### Todo Notes fuer Review von Betreuer #############
 % Select what to do with todonotes: 
 % \usepackage[disable]{todonotes} % notes not showed
 \usepackage[draft]{todonotes}   % notes showed
 
-\usepackage{hyperref}               
 
-% ============= Kopf- und Fußzeile =============
+%### Kopf- und Fußzeile ##############################
 \pagestyle{fancy}
 
 %Zeilenabstand -> singlespace, onehalfspace, doublespace
@@ -136,7 +132,7 @@
 \lfoot{}
 \cfoot{\thepage}
 \rfoot{}
-%%
+
 %\renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
